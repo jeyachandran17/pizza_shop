@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import pizzaLogo from "./images/pizza_logo.png"
 import './App.css'
 
 function App() {
@@ -16,7 +15,6 @@ function Application() {
 
     return (
       <div className='main_container'>
-        <h3>Welcome to the Application</h3>
         <Navigation />
         <Home_page />
       </div>
@@ -26,21 +24,26 @@ function Application() {
 function Navigation() {
   return (
     <nav className='navigation'>
-      <div className='logo'>
-        {/* In furture change the pizza logo */}
-        <p>logo</p>
+      <div className='navigation_container'>
+        <div className="log-container">
+          {/* In furture change the pizza logo */}
+          <img className='logo-img' src={pizzaLogo} alt="" srcset="" />
+        </div>
+        {/* <div className="nav-profile">
+          <p>profile name</p>
+          <p>profile image</p>
+        </div> */}
       </div>
-      <div>
-        <p>Home</p>
-        <p>Menu</p>
-        <p>Services</p>
-        <p>Blog</p>
-        <p>About</p>
-        <p>Contect us</p>
+      <div className='manuBar-container'>
+        <button>Pizza</button>
+        <button>Drink</button>
+        <button>Pasta</button>
+        <button>Burger</button>
       </div>
     </nav>
   )
 }
+
 
 function Home_page() {
   return (
@@ -55,21 +58,10 @@ function Home_page() {
         <div className='home_page3'>
           <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
         </div>
-        <div className='home_page4'>
-          <button>View menu</button>
-        </div>
-      </div>
-      <div className="homepage_container2">
-        {/* In future replace the loge at the "pizza" text  */}
-        <h3>WELCOME TO PIZZA RESTAURANT</h3>
-        {/* then at more contant or discribe the restaurant */}
       </div>
     </div>
   )
 }
-
-
-
 
 
 

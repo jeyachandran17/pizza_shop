@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 100px;
+    background-color: black;
+}
+
+.logo-img{
+    width: 60px;
+    height: 60px;
+}
+
+.manuBar-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.homepage_Main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: whitesmoke;
+    height: 250px;
+}
